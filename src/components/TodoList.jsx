@@ -1,10 +1,10 @@
 import { useState } from "react";
-export default function TodoList({todos}) {
-  
+import TodoItem from "./TodoItem";
+export default function TodoList({ todos }) {
   return (
     <div>
       {todos.map((item) => (
-        <h3 key={item}>{item}</h3>
+        <TodoItem item={item} />
       ))}
     </div>
   );
