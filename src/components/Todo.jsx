@@ -2,28 +2,28 @@ import { useState } from "react";
 
 export default function Todo() {
   const [todo, setTodo] = useState("");
-  const [todos, setTodos] = useState([])
+  const [todos, setTodos] = useState([]);
 
   function handleSubmit(e) {
     e.preventDefault();
-    setTodos(todo)
-    console.log(todos)
+    setTodos([...todos, todo]);
+    setTodo("");
   }
 
   function handleChange(e) {
-
     setTodo(e.target.value);
-
   }
 
   return (
     <div>
       <form onSubmit={handleSubmit}>
         <input onChange={(e) => handleChange(e)} type="text" value={todo} />
-        <button>Add</button>
+        <button type="Submit">Add</button>
       </form>
 
-
+      {todos.map((todo) => (
+        <h3>{todo}</h3>
+      ))}
     </div>
   );
 }
