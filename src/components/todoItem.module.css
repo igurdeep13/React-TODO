@@ -1,18 +1,18 @@
-.todoItem{
+.todoItem {
     padding: 12px 0px;
     font-size: 18px;
 
 }
 
-.seperationLine{
+.seperationLine {
     border: 1px solid rgb(208, 206, 206)
 }
 
-.itemDiv{
+.itemDiv {
     padding: 12px 17px;
 }
 
-.btn{
+.btn {
     float: right;
     padding: 3px 15px;
     background-color: maroon;
@@ -20,5 +20,9 @@
     border: none;
     cursor: pointer;
     border-radius: 4px;
-    font-size: 15spx ;
+    font-size: 15spx;
+}
+
+.completed {
+    text-decoration: line-through;
 }

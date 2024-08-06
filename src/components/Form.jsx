@@ -8,7 +8,7 @@ export default function Form({ todos, setTodos }) {
     e.preventDefault();
     setTodos([...todos, todo]);
     setTodo({ name: "", isdone: false });
-  }
+  }  
 
   function handleChange(e) {
     setTodo({ name: e.target.value, isdone: false });
