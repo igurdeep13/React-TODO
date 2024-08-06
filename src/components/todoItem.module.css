@@ -1,0 +1,24 @@
+.todoItem{
+    padding: 12px 0px;
+    font-size: 18px;
+
+}
+
+.seperationLine{
+    border: 1px solid rgb(208, 206, 206)
+}
+
+.itemDiv{
+    padding: 12px 17px;
+}
+
+.btn{
+    float: right;
+    padding: 3px 15px;
+    background-color: maroon;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 15spx ;
+}
